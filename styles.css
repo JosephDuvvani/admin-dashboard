@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    width: 50px;
+}
+.header{
+    background-color: white;
+}
+.sidebar{
+    background-color: #f43f5e;
+}
+.main{
+    background-color: #fff5f8;    
+}
