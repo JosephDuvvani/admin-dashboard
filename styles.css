@@ -210,7 +210,7 @@ svg {
     padding: 30px 20px;
 }
 
-.card .project-name {
+.projects .card .project-name {
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 5px;
@@ -234,3 +234,90 @@ svg {
     margin-left: 15px;
 }
 
+.sidebar-right {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 50px;
+}
+
+.sidebar-right .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.announcement .subject {
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.announcements .card {
+    background-color: #fff;
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 12px;
+    padding: 20px 20px 20px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.announcements {
+    margin-top: 18px;
+}
+
+.announcements .card > * {
+    padding: 5px 0;
+}
+
+.announcement ~ .announcement {
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.announcements .announcement:nth-child(1),
+.announcements .announcement:nth-child(2) {
+    padding: 10px 5px;
+}
+
+.announcement:nth-last-child(1) {
+    padding: 10px 5px 0 5px;
+}
+
+.trending-projects .card {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    min-width: 200px; 
+    max-width: 260px;
+    gap: 30px;
+}
+
+.trending-projects .card .project-account {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+}
+
+.trending-projects .project-account .profile-pic {
+    height: 50px;
+    border-radius: 25px;
+    grid-column: 1;
+    margin-right: 15px;
+}
+.trending-projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.trending-projects .project-name {
+    opacity: 0.6;
+}
