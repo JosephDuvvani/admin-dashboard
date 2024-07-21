@@ -81,6 +81,8 @@ a {
     align-items: center;
     padding: 20px 30px;
     gap: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 3px rgb(0, 0, 0, 0.2);
 }
 
 .user-bio {
@@ -186,7 +188,9 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 20px 30px 100px 20px;
-    gap: 50px; 
+    gap: 50px;
+    position: relative;
+    z-index: -1; 
 }
 
 .main .projects {
@@ -213,6 +217,7 @@ a {
     border-radius: 10px;
     background-color: #fff;
     padding: 30px 20px;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
 }
 
 .projects .card .project-name {
@@ -266,6 +271,7 @@ a {
     grid-template-rows: repeat(3, min-content);
     min-width: 200px;
     max-width: 250px;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
 }
 
 .announcements {
@@ -302,6 +308,7 @@ a {
     min-width: 200px; 
     max-width: 260px;
     gap: 30px;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
 }
 
 .trending-projects .card .project-account {
@@ -326,3 +333,4 @@ a {
 .trending-projects .project-name {
     opacity: 0.6;
 }
+
