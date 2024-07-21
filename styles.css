@@ -19,6 +19,11 @@ svg {
     width: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     height: 100vh;
     display: grid;
