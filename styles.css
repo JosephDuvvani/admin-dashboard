@@ -24,6 +24,10 @@ a {
     color: inherit;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -59,6 +63,16 @@ a {
     margin-right: 100px;
 }
 
+.search label:hover {
+    cursor: pointer;
+}
+
+#search-bar:focus {
+    outline: none;
+    border: 1px solid rgb(196, 55, 79, 0.5);
+    box-shadow: 1px 3px 4px rgb(196, 55, 79, 0.2);
+}
+
 .user {
     display: flex;
     align-items: center;
@@ -83,6 +97,7 @@ a {
     gap: 50px;
     background-color: #fff;
     box-shadow: 0 4px 3px rgb(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .user-bio {
@@ -126,6 +141,10 @@ a {
     color: #fff;
 }
 
+.action-btns button:hover {
+    background-color: #b13247;
+}
+
 .sidebar {
     background-color: #c4374f;
     grid-row: 1 / 4;
@@ -155,7 +174,7 @@ a {
 .nav .nav-list {
     list-style: none;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 11px;
 }
 
 .nav-list li {
@@ -174,11 +193,17 @@ a {
     display: grid;
     grid-template-columns: min-content min-content;
     gap: 15px;
+    padding: 4px;
 }
 
 .nav-list li a svg {
     position: relative;
     top: -1px;
+}
+
+.nav-list li:hover {
+    background-color: #b13247;
+    border-radius: 4px;
 }
 
 .main {
@@ -189,8 +214,6 @@ a {
     grid-template-columns: 3fr 1fr;
     padding: 20px 30px 100px 20px;
     gap: 50px;
-    position: relative;
-    z-index: -1; 
 }
 
 .main .projects {
@@ -213,11 +236,12 @@ a {
 .projects .cards .card {
     display: flex;
     flex-direction: column;
-    border-left: 10px solid rgb(32, 165, 218);
+    border-left: 10px solid #20a5da;
     border-radius: 10px;
     background-color: #fff;
     padding: 30px 20px;
     box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .projects .card .project-name {
@@ -242,6 +266,14 @@ a {
     border-style: none;
     background-color: transparent;
     margin-left: 15px;
+}
+
+.projects .card:hover {
+    background-color: #f7f7f7;
+}
+
+.card-btns button:hover {
+    fill: #20a5da;
 }
 
 .sidebar-right {
@@ -278,21 +310,25 @@ a {
     margin-top: 18px;
 }
 
-.announcements .card > * {
-    padding: 5px 0;
-}
-
 .announcement ~ .announcement {
     border-top: 1px solid rgb(0, 0, 0, 0.2);
 }
 
-.announcements .announcement:nth-child(1),
+.announcements .announcement:nth-child(1) {
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px 5px 0 0;
+}
 .announcements .announcement:nth-child(2) {
     padding: 10px 5px;
 }
 
 .announcement:nth-last-child(1) {
-    padding: 10px 5px 0 5px;
+    padding: 10px 5px 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.announcement:hover {
+    background-color: #fcfcfc;
 }
 
 .trending-projects .card {
@@ -313,7 +349,7 @@ a {
 
 .trending-projects .card .project-account {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: min-content 1fr;
     align-items: center;
 }
 
@@ -327,10 +363,17 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     gap: 3px;
 }
 
 .trending-projects .project-name {
     opacity: 0.6;
+    flex: 1;
+}
+
+.trending-projects .project:hover {
+        border-right: 4px solid #20a5da;
+        border-radius: 4px;
 }
 
