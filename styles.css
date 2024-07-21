@@ -97,7 +97,8 @@ button:hover {
     gap: 50px;
     background-color: #fff;
     box-shadow: 0 4px 3px rgb(0, 0, 0, 0.2);
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .user-bio {
