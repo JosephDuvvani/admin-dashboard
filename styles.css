@@ -31,7 +31,7 @@ button:hover {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(min-content, 250px) 1fr;
+    grid-template-columns: 1fr 6fr;
 }
 
 .header {
